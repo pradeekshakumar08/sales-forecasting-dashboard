@@ -4,7 +4,7 @@ An end-to-end analytics project that cleans a real retail dataset, segments cust
 
 **Live dashboard:** [View on Tableau Public](https://public.tableau.com/views/SalesForecastingandCustomerSegmentationDashboard/Dashboard1)
 
-![Dashboard](images/dashboard.png)
+![Dashboard](images/Dashboard%201.png)
 
 ## Problem Statement
 
@@ -61,7 +61,8 @@ A retailer wants to know which customers generate the most revenue, which custom
 - **Champions are about 20% of customers but generate about 74% of total revenue**, so retaining them matters most.
 - **Lost customers are the largest group (1,973) but bring in only about 4% of revenue.**
 - Sales peak every November, which points to holiday-season demand.
-- Forecast accuracy on the 3-month test set: **MAPE = X%** *(replace X with your value)*.
+- Forecast accuracy on the 3-month test set: **MAPE = 38.5%**.
+-  The error is high because the 3-month test window covers the holiday surge, which a trend-only model cannot capture with only two years of history.
 
 ## Forecast
 
@@ -85,7 +86,7 @@ A retailer wants to know which customers generate the most revenue, which custom
 ```
 sales-forecasting-dashboard/
 ├── data/                 # cleaned data and model outputs (CSV)
-├── notebooks/            # Google Colab notebook (.ipynb)
+├── notebook/             # Google Colab notebook (.ipynb)
 ├── images/               # dashboard and forecast screenshots
 ├── dashboard/            # dashboard files
 └── README.md
